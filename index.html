@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Burrito Order">
+        <meta name="author" content="Justin Janisch">
+        <title>Project 2 - Burrito Order</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"> 
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+			
+		<script type="text/javascript" src="processBurritoOrder.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css">
+			
+    </head>
+    <body class="">
+
+        <h1>Project 2 - Justin Janisch</h1>
+        <hr />
+        <form role="form"> 
+                        
+            <div class="form-group" id="typeGroup"> 
+                <label class="fieldLabel" for="type">Choose your burrito:</label>                 
+                <select id="type" class="form-control">
+					<option value="Chicken">Chicken - $6.20</option>          
+                    <option value="Steak">Steak - $6.75</option>                     
+                    <option value="Carnitas">Carnitas - $6.60</option>
+					<option value="Barbacoa">Barbacoa - $6.60</option>
+					<option value="Vegetarian">Vegetarian - $6.20</option>                     
+                </select>
+            </div>  
+			           
+            <div class="form-group" id="riceGroup">
+				<label class="fieldLabel" for="rice">Select a rice:</label>
+                <label class="radio-inline"><input type="radio" id="rice" name="rice" value="White Rice" checked>White Rice</label>  
+                <label class="radio-inline"><input type="radio" id="rice" name="rice" value="Brown Rice">Brown Rice</label>
+            </div>  
+			
+            <div class="form-group" id="beanGroup">
+				<label class="fieldLabel" for="bean">Which type of beans:</label>
+                <label class="radio-inline"><input type="radio" id="bean" name="bean" value="Pinto Beans" checked>Pinto Beans</label>  
+                <label class="radio-inline"><input type="radio" id="bean" name="bean" value="Black Beans">Black Beans<label>
+            </div>
+			           
+            <div class="form-group"> 
+            	<label class="fieldLabel" for="">Choose Salsa(s):</label>  
+              	<label class="checkbox-inline"><input type="checkbox" value="Pico De Gallo" id="pico">Pico De Gallo</label>
+              	<label class="checkbox-inline"><input type="checkbox" value="Roasted Corn" id="corn">Roasted Corn</label>
+              	<label class="checkbox-inline"><input type="checkbox" value="Tomatillo - Green" id="greenTomatillo">Tomatillo - Green</label>
+			  	<label class="checkbox-inline"><input type="checkbox" value="Tomatillo - Red" id="redTomatillo">Tomatillo - Red</label>
+            </div>
+			
+			<div class="form-group">
+				<label class="fieldLabel" for="guacamole">Add Guacamole $1.40</label>
+				<label class="checkbox-inline"><input type="checkbox" value="Guacamole" id="guacamole">Guacamole</label>
+            </div>
+			          
+            <br />
+            <button type="button" class="btn btn-success btn-lg" id="btnAdd">Add burrito to order</button>             
+        </form>
+		
+		
+		
+		
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
+
+<script type="text/javascript">
+init();
+</script>
